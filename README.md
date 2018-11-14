@@ -14,8 +14,7 @@ Copy `watchee/conf-dist` to `watchee/dist` and adapt to your needs.
 
 Script to run on when the host should be watched:
 ```sh
-cd watchee
-./run.sh
+watchee/run.sh
 ```
 
 # watcher
@@ -23,8 +22,7 @@ Copy `watcher/conf-dist` to `watcher/dist` and adapt to your needs.
 
 Script to run on the watcher:
 ```sh
-cd watcher
-./run.sh
+watcher/run.sh
 ```
 
 Use your favorite VNC client, connect to `localhost:0` (or a different :X if you set another value in conf)
