@@ -1,0 +1,5 @@
+#!/bin/sh
+# copy this file to 'conf' and adapt to your needs
+SSH_USER=vncuser
+SSH_SERVER=server.example.com
+PORT_SERVER=12345
