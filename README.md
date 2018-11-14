@@ -10,15 +10,21 @@ adduser --shell /usr/sbin/nologin vncuser
 # watchee
 To enable desktop sharing in Ubuntu you have to install `vino`, or execute `watchee/install.sh`.
 
+Copy `watchee/conf-dist` to `watchee/dist` and adapt to your needs.
+
 Script to run on when the host should be watched:
 ```sh
-watchee/run.sh
+cd watchee
+./run.sh
 ```
 
 # watcher
-Script to run on the 
+Copy `watcher/conf-dist` to `watcher/dist` and adapt to your needs.
+
+Script to run on the watcher:
 ```sh
-ssh -N -L 5900:localhost:12345 vncuser@server
+cd watcher
+./run.sh
 ```
 
-Use your favorite VNC client, connect to `localhost:0`
+Use your favorite VNC client, connect to `localhost:0` (or a different :X if you set another value in conf)
